@@ -7,4 +7,14 @@ void setup() {
 }
 
 void loop() {
+  lightValue = lightValue + delta;
+  if (lightValue <= 0 || lightValue >= 255) {
+    delta = -delta;
+  }
+  analogWrite(9, lightValue);
+  Serial.println(lightValue);
+  delay(10);
+
+
 }
+
