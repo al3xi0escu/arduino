@@ -14,7 +14,4 @@ void loop() {
   analogWrite(9, lightValue);
   Serial.println(lightValue);
   delay(10);
-
-
 }
-

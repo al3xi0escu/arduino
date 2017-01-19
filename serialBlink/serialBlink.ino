@@ -3,8 +3,8 @@ void setup() {
   Serial.begin(9600); // Sets baud rate to 9600
   Serial.setTimeout(10); // Make arduino check serial buffer every 10 milliseconds
   Serial.println("Hello"); // Made Arduino say Hello when it boots up
-  Serial.println("Send 'On' to turn on the LED."); // Make the light turn on in respons to my commands via serial monitor
-  Serial.println("Send 'Off' to turn off the LED."); // Make the light turn Off in respons to my commands via serial monitor
+  Serial.println("Send 'On' to turn on the LED."); // Sending the user instructions to turn the light on
+  Serial.println("Send 'Off' to turn off the LED."); // Sending the user instructions to turn the light off
   pinMode(13, OUTPUT); // Made pin 13 to output
 }
 
